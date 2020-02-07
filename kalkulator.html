@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kalkulator Sederhana</title>
+</head>
+<body>
+<center><h1>KALKULATOR</h1></center>
+<center><form name="kalku">
+    <table BORDER=4>
+        <tr>
+            <td>
+                <input type="text" name="Input" size="25">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center>
+                <br>
+                <INPUT TYPE="checkbox" NAME="ten" VALUE=" 10 " OnClick="kalku.Input.value += '10'"> 10<br>
+                <INPUT TYPE="checkbox" NAME="two" VALUE=" 2 " OnCLick="kalku.Input.value += '2'"> 2<br>
+                <INPUT TYPE="checkbox" NAME="five" VALUE=" 5 " OnClick="kalku.Input.value += '5'"> 5<br>
+                </center>
+                <br>
+                <center>
+                <INPUT TYPE="button" NAME="plus" VALUE=" + " OnClick="kalku.Input.value += ' + '">               
+                <INPUT TYPE="button" NAME="minus" VALUE=" - " OnClick="kalku.Input.value += ' - '">
+                <INPUT TYPE="button" NAME="div" VALUE=" / " OnClick="kalku.Input.value += ' / '">                
+                <INPUT TYPE="button" NAME="times" VALUE=" x " OnClick="kalku.Input.value += ' * '">               
+                <INPUT TYPE="button" NAME="clear" VALUE=" c " OnClick="kalku.Input.value = ''">          
+                <INPUT TYPE="button" NAME="DoIt" VALUE=" = " OnClick="kalku.Input.value = eval(kalku.Input.value)">
+                </center>
+                <br>
+            </td>
+        </tr>
+    </table>
+</form></center>
+</body>
+</html>
